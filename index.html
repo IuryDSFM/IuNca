@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IUNCA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: rgb(255, 160, 122)">
+    <div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-6 text-center row justify-content-center">
+                <label for="recebido" class="text-primary h3">Recebido</label>
+                <input type="number" id="recebido" class="form-control w-50">
+            </div>
+            <div class="col-6 text-center row justify-content-center">
+                <label for="total" class="text-primary h3">Total</label>
+                <input type="number" id="total" class="form-control w-50">
+            </div>
+            <div class="col-12 text-center p-0 justify-content-center">
+                <input type="submit" id="calcular" class="btn btn-primary w-25 my-3" onclick="verificar()">
+            </div>
+            <div class="col-6 justify-content-center d-flex fw-bold">
+                <div class="d-block">
+                    <input type="checkbox" name="d-100" id="d-100" checked>
+                    <label for="d-100">Nota de 100</label><br>
+                    <input type="checkbox" name="d-50" id="d-50" checked>
+                    <label for="d-50">Nota de 50</label><br>
+                    <input type="checkbox" name="d-20" id="d-20" checked>
+                    <label for="d-20">Nota de 20</label>
+                </div>
+
+            </div>
+            <div class="col-6 justify-content-center d-flex fw-bold">
+                <div class="d-block">
+                    <input type="checkbox" name="d-10" id="d-10" checked>
+                    <label for="d-10">Nota de 10</label><br>
+                    <input type="checkbox" name="d-5" id="d-5" checked>
+                    <label for="d-5">Nota de 5</label><br>
+                    <input type="checkbox" name="d-2" id="d-2" checked>
+                    <label for="d-2">Nota de 2</label><br>
+                    <input type="checkbox" name="d-1" id="d-1" checked>
+                    <label for="d-1">1 Real</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="container resultado">
+    </main>
+</body>
+<script src="app.js"></script>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
